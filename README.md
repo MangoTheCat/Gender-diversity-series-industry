@@ -388,11 +388,9 @@ bar_2017 <- ggplot(percentages_movies_series_2017, aes(x = category,
         axis.text.y=element_blank(),
         axis.ticks.y=element_blank(),
         axis.title.y=element_blank(),
-        axis.title.x=element_text(),
         strip.text.x = element_text(face="bold"),
         plot.title = element_text(hjust = 0.5, face="bold"),
-        legend.title=element_blank(), # center the title
-        legend.text=element_text()) + 
+        legend.title=element_blank()) + # center the title
   labs(title = paste("Percentages of women in 2017"),
        x = "",
        y = "Percentages") +
