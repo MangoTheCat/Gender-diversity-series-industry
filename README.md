@@ -388,12 +388,12 @@ bar_2017 <- ggplot(percentages_movies_series_2017, aes(x = category,
         axis.text.y=element_blank(),
         axis.ticks.y=element_blank(),
         axis.title.y=element_blank(),
-        axis.title.x=element_text(size = 15),
-        strip.text.x = element_text(size = 15, face="bold"),
-        plot.title = element_text(hjust = 0.5, size = 20, face="bold"),
+        axis.title.x=element_text(),
+        strip.text.x = element_text(face="bold"),
+        plot.title = element_text(hjust = 0.5, face="bold"),
         legend.title=element_blank(), # center the title
-        legend.text=element_text(size=15)) + 
-  labs(title = paste("Percentages of women in", input$variable),
+        legend.text=element_text()) + 
+  labs(title = paste("Percentages of women in 2017"),
        x = "",
        y = "Percentages") +
   guides(fill = guide_legend(reverse=TRUE)) + # reverse the order of the legend
